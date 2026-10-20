@@ -1,7 +1,6 @@
-Resolución del ejercicio N°29 de la unidad 3 de programación 2.
-Este programa modela un sistema de cálculo geométrico que administra diferentes figuras mediante el uso de herencia, atributos protegidos, polimorfismo y sobrescritura de métodos en Java.
-
-Clases utilizadas
-FiguraGeometrica: Clase abstracta base que almacena el atributo común color y define la estructura general para los cálculos matemáticos.
-Circulo: Clase hija que extiende de FiguraGeometrica, incorpora el atributo radio y sobrescribe los métodos para calcular el área y el perímetro específicos.
-Rectangulo: Clase hija que extiende de FiguraGeometrica, incorpora los atributos base y altura, sobrescribiendo también los cálculos correspondientes.
+Este programa está diseñado para modelar un sistema de cálculo geométrico aplicando los pilares fundamentales de la programación orientada a objetos en Java: herencia, encapsulamiento, clases y métodos abstractos (polimorfismo estricto) y la implementación de fórmulas matemáticas especializadas (@Override) para áreas y perímetros.
+A continuación se detalla exactamente lo que hace cada parte del programa:
+Define la clase base abstracta FiguraGeometrica: Establece la estructura común a cualquier figura (como el atributo color) y declara métodos abstractos obligatorios (calcularArea() y calcularPerimetro()), garantizando que toda subclase implemente su propia lógica matemática.
+Desarrolla las subclases Circulo y Rectangulo: Extienden de FiguraGeometrica incorporando sus atributos particulares (radio para el círculo; base y altura para el rectángulo) mediante el uso de super(...).
+Sobrescribe los cálculos matemáticos: Cada subclase implementa las fórmulas geométricas correspondientes (Área del círculo: $\pi r^2$, Perímetro: $2\pi r$; Área del rectángulo: $b \times h$, Perímetro: $2(b + h)$).
+Ejecuta la prueba en el main: Crea una colección polimórfica de figuras geométricas, invoca dinámicamente sus cálculos de área y perímetro, y despliega los resultados formateados por consola.
